@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+:root {
+--Strong-Cyan: hsl(171, 66%, 44%);
+--Light-Blue: hsl(233, 100%, 69%);
+--Dark-Grayish-Blue: hsl(210, 10%, 33%);
+--Grayish-Blue: hsl(201, 11%, 66%);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Bai Jamjuree', sans-serif;
+    background-image: url("../images/bg-header-desktop.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: var(--Dark-Grayish-Blue);
+}
+p {
+    opacity: 0.6;
+    font-size: 0.9rem;
+    line-height: 1.3rem;
+    text-align: center;
+}
+
+.container , .feature , .features-list{
+    width: 80%;
+    margin: 0 auto;
+}
+.container .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 90px 0 40px 0;
+
+}
+.container .heading h1 , p{
+    text-align: center;
+    padding: 10px;
+}
+.container .heading .install-buttons {
+    display: flex;
+    width: 28%;
+    margin: 30px auto;
+    font-size: 0.8rem;
+    justify-content: space-evenly;
+}
+
+.install-buttons a {
+    padding: 10px 25px;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    text-decoration: none;
+
+}
+.install-buttons a:hover {
+    cursor: pointer;
+}
+.install-buttons .ios {
+    background-color: var(--Strong-Cyan);
+}
+
+.install-buttons .mac {
+    background-color: var(--Light-Blue);
+}
+
+.feature {
+    margin: 90px auto;
+}
+
+.feature h2{
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.features-list {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.features-list .mac-image img {
+    position: relative;
+    left:-80px ;
+}
+
+.features-list .features-term {
+    display: flex;
+    flex-direction: column;
+}
+.features-term .term {
+    margin: 30px 120px 30px 0;
+}
+.features-term .term p
+{
+    text-align: left;
+    padding:10px 0;
+}
