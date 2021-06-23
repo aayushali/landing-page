@@ -19,36 +19,40 @@ body {
 }
 p {
     opacity: 0.6;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     line-height: 1.3rem;
     text-align: center;
 }
 
-.container , .feature , .features-list{
+.container , .feature , .page-feature, .main-features {
     width: 80%;
+    height: 100vh;
     margin: 0 auto;
 }
 .container .logo {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 90px 0 40px 0;
+    padding: 20vh 0 40px 0;
 
 }
-.container .heading h1 , p{
+ .heading h1 , p{
     text-align: center;
-    padding: 10px;
+    padding: 15px;
 }
-.container .heading .install-buttons {
+.heading h1 {
+    font-size: 2.5rem;
+}
+ .heading .install-buttons {
     display: flex;
-    width: 28%;
-    margin: 30px auto;
+    width: 30%;
+    margin: 40px auto;
     font-size: 0.8rem;
     justify-content: space-evenly;
 }
 
 .install-buttons a {
-    padding: 10px 25px;
+    padding: 15px 30px;
     border-radius: 20px;
     border: none;
     color: white;
@@ -66,24 +70,20 @@ p {
     background-color: var(--Light-Blue);
 }
 
-.feature {
-    margin: 90px auto;
-}
 
-.feature h2{
+.feature h1,.page-feature h1 ,.feature p , .page-feature p , .main-features h1 ,.main-features p {
     text-align: center;
-    padding-bottom: 15px;
+    padding-bottom: 30px;
 }
-
+.feature h1,.page-feature h1 , .main-features h1 {
+padding-bottom: 25px;
+}
 .features-list {
     display: flex;
     align-items: flex-start;
-    justify-content: space-between;
+    justify-content: center;
     overflow: hidden;
-}
-.features-list .mac-image img {
-    position: relative;
-    left:-80px ;
+    margin: 40px auto;
 }
 
 .features-list .features-term {
@@ -91,10 +91,72 @@ p {
     flex-direction: column;
 }
 .features-term .term {
-    margin: 30px 120px 30px 0;
+    margin: 30px 120px 30px 70px;
 }
 .features-term .term p
 {
     text-align: left;
-    padding:10px 0;
+    padding:15px 0;
+}
+
+.page-feature {
+    margin: 30vh auto;
+    height: 90vh;
+    overflow: hidden;
+}
+
+.page-feature .image-devices img{
+    position: relative;
+    left: 10vw;
+    top: 5vh;
+}
+
+.main-features {
+}
+
+.highlights {
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+    margin: 60px auto;
+    align-items: center;
+    text-align: center;
+}
+
+.highlights .card h3{
+padding: 25px 0 15px 0;
+}
+.company-logo {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+.google , .microsoft , .ibm , .hewlett, .vector {
+    background-image: url("../images/logo-google.png");
+    height: 60px;
+    width: 100%;
+    background-repeat: no-repeat;
+}
+.google {
+    margin-left: 8vw;
+
+}
+.microsoft {
+    background-image: url("../images/logo-microsoft.png");
+}
+.ibm {
+    background-image: url("../images/logo-ibm.png");
+
+}
+.hewlett {
+    background-image: url("../images/logo-hp.png");
+
+}
+.vector {
+    background-image: url("../images/logo-vector-graphics.png");
+}
+
+.main-features .heading {
+    margin-top: 15vh;
 }
