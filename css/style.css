@@ -1,15 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
 :root {
---Strong-Cyan: hsl(171, 66%, 44%);
---Light-Blue: hsl(233, 100%, 69%);
---Dark-Grayish-Blue: hsl(210, 10%, 33%);
---Grayish-Blue: hsl(201, 11%, 66%);
+    --Strong-Cyan: hsl(171, 66%, 44%);
+    --Light-Blue: hsl(233, 100%, 69%);
+    --Dark-Grayish-Blue: hsl(210, 10%, 33%);
+    --Grayish-Blue: hsl(201, 11%, 66%);
 }
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     font-family: 'Bai Jamjuree', sans-serif;
     background-image: url("../images/bg-header-desktop.png");
@@ -17,6 +20,7 @@ body {
     background-size: 100%;
     color: var(--Dark-Grayish-Blue);
 }
+
 p {
     opacity: 0.6;
     font-size: 1.1rem;
@@ -24,11 +28,12 @@ p {
     text-align: center;
 }
 
-.container , .feature , .page-feature, .main-features {
+.container, .feature, .page-feature, .main-features {
     width: 80%;
     height: 100vh;
     margin: 0 auto;
 }
+
 .container .logo {
     display: flex;
     align-items: center;
@@ -36,14 +41,17 @@ p {
     padding: 20vh 0 40px 0;
 
 }
- .heading h1 , p{
+
+.heading h1, p {
     text-align: center;
     padding: 15px;
 }
+
 .heading h1 {
     font-size: 2.5rem;
 }
- .heading .install-buttons {
+
+.heading .install-buttons {
     display: flex;
     width: 30%;
     margin: 40px auto;
@@ -59,9 +67,11 @@ p {
     text-decoration: none;
 
 }
+
 .install-buttons a:hover {
     cursor: pointer;
 }
+
 .install-buttons .ios {
     background-color: var(--Strong-Cyan);
 }
@@ -71,13 +81,15 @@ p {
 }
 
 
-.feature h1,.page-feature h1 ,.feature p , .page-feature p , .main-features h1 ,.main-features p {
+.feature h1, .page-feature h1, .feature p, .page-feature p, .main-features h1, .main-features p {
     text-align: center;
     padding-bottom: 30px;
 }
-.feature h1,.page-feature h1 , .main-features h1 {
-padding-bottom: 25px;
+
+.feature h1, .page-feature h1, .main-features h1 {
+    padding-bottom: 25px;
 }
+
 .features-list {
     display: flex;
     align-items: flex-start;
@@ -90,13 +102,14 @@ padding-bottom: 25px;
     display: flex;
     flex-direction: column;
 }
+
 .features-term .term {
     margin: 30px 120px 30px 70px;
 }
-.features-term .term p
-{
+
+.features-term .term p {
     text-align: left;
-    padding:15px 0;
+    padding: 15px 0;
 }
 
 .page-feature {
@@ -105,7 +118,7 @@ padding-bottom: 25px;
     overflow: hidden;
 }
 
-.page-feature .image-devices img{
+.page-feature .image-devices img {
     position: relative;
     left: 10vw;
     top: 5vh;
@@ -123,36 +136,63 @@ padding-bottom: 25px;
     text-align: center;
 }
 
-.highlights .card h3{
-padding: 25px 0 15px 0;
+.highlights .icon, .one {
+    height: 50px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: 45%;
+
 }
+
+.one {
+    background: url("../images/icon-blacklist.svg");
+}
+
+.two {
+    background: url("../images/icon-text.svg");
+}
+
+.three {
+    background: url("../images/icon-preview.svg");
+}
+
+.highlights .card h3 {
+    padding: 25px 0 15px 0;
+}
+
 .company-logo {
     display: flex;
     justify-content: flex-end;
     align-items: center;
 
 }
-.google , .microsoft , .ibm , .hewlett, .vector {
+
+.google, .microsoft, .ibm, .hewlett, .vector {
     background-image: url("../images/logo-google.png");
     height: 60px;
     width: 100%;
     background-repeat: no-repeat;
 }
+
 .google {
     margin-left: 8vw;
 
 }
+
 .microsoft {
     background-image: url("../images/logo-microsoft.png");
 }
+
 .ibm {
     background-image: url("../images/logo-ibm.png");
 
 }
+
 .hewlett {
     background-image: url("../images/logo-hp.png");
 
 }
+
 .vector {
     background-image: url("../images/logo-vector-graphics.png");
 }
