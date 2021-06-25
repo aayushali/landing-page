@@ -4,7 +4,7 @@
     --Strong-Cyan: hsl(171, 66%, 44%);
     --Light-Blue: hsl(233, 100%, 69%);
     --Dark-Grayish-Blue: hsl(210, 10%, 33%);
-    --Grayish-Blue: hsl(201, 11%, 66%);
+    --Grayish-Blue: hsl(0, 9%, 96%);
 }
 
 * {
@@ -28,7 +28,7 @@ p {
     text-align: center;
 }
 
-.container, .feature, .page-feature, .main-features {
+.container {
     width: 80%;
     height: 100vh;
     margin: 0 auto;
@@ -56,7 +56,7 @@ p {
     width: 30%;
     margin: 40px auto;
     font-size: 0.8rem;
-    justify-content: space-evenly;
+    justify-content: space-evenly   ;
 }
 
 .install-buttons a {
@@ -68,7 +68,7 @@ p {
 
 }
 
-.install-buttons a:hover {
+ a:hover {
     cursor: pointer;
 }
 
@@ -113,36 +113,38 @@ p {
 }
 
 .page-feature {
-    margin: 30vh auto;
-    height: 90vh;
+    margin: 150px auto;
+    height: auto;
     overflow: hidden;
+    text-align: center;
 }
-
-.page-feature .image-devices img {
-    position: relative;
-    left: 10vw;
-    top: 5vh;
-}
-
-.main-features {
+.page-feature .image-devices {
+    padding-top: 30px;
 }
 
 .highlights {
     display: flex;
     justify-content: space-evenly;
-    width: 90%;
-    margin: 60px auto;
-    align-items: center;
+    margin: 60px 0;
     text-align: center;
 }
-
-.highlights .icon, .one {
-    height: 50px;
-    background-repeat: no-repeat;
-    background-size: contain;
-    margin-left: 45%;
+.card {
+    width: 25%;
+}
+.icon-container {
+    text-align: center;
+    display: flex;
+    justify-content: center;
 
 }
+.highlights .icon, .one {
+    height: 50px;
+    width: 20%;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+
 
 .one {
     background: url("../images/icon-blacklist.svg");
@@ -162,7 +164,7 @@ p {
 
 .company-logo {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-evenly;
     align-items: center;
 
 }
@@ -170,14 +172,10 @@ p {
 .google, .microsoft, .ibm, .hewlett, .vector {
     background-image: url("../images/logo-google.png");
     height: 60px;
-    width: 100%;
+    width: 12%;
     background-repeat: no-repeat;
 }
 
-.google {
-    margin-left: 8vw;
-
-}
 
 .microsoft {
     background-image: url("../images/logo-microsoft.png");
@@ -197,6 +195,203 @@ p {
     background-image: url("../images/logo-vector-graphics.png");
 }
 
-.main-features .heading {
-    margin-top: 15vh;
+.heading {
+    margin : 100px auto;
+}
+
+.wrapper-footer {
+    background-color: #f6f6f6;
+    display: flex;
+    padding-top: 30px;
+}
+ul {
+    list-style-type: none;
+}
+.footer-logo {
+    height:50px;
+    background: url("../images/logo.svg") no-repeat;
+    background-size: contain;
+}
+.footer-logo-wrap {
+    display: flex;
+    width: 30%;
+
+    justify-content: center;
+}
+
+.footer-menu {
+    width: 50%;
+}
+.menu-items {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.menu-items a {
+display: block;
+    padding: 10px;
+
+}
+.menu-items .item {
+    width: 50%;
+}
+a {
+    text-decoration: none;
+    color: var(--Dark-Grayish-Blue);
+}
+
+
+.social-icons ul{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+    padding-top: 20px;
+}
+
+
+@media (max-width: 600px){
+    p {
+        font-size: 1rem;
+    }
+
+    .container {
+        width: 90%;
+        height: auto;
+    }
+
+    .container .logo {
+        justify-content: center;
+        padding-top: 15vh;
+
+    }
+
+    .heading h1, p {
+        padding: 0 15px 15px 15px;
+    }
+
+    .heading h1 {
+        font-size: 2rem;
+    }
+
+    .heading .install-buttons {
+        flex-direction: column;
+        width: 50%;
+        text-align: center;
+    }
+
+
+    .install-buttons .ios {
+        margin-bottom: 10px;
+
+    }
+
+    .feature h1, .page-feature h1, .main-features h1 {
+        padding-bottom: 45px;
+    }
+
+    .features-list {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .features-list .features-term {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .features-term .term {
+        margin: 30px 70px;
+    }
+    .mac-image img ,  .page-feature .image-devices img{
+        height: 300px;
+        width: 80vw;
+        padding-bottom: 20px;
+    }
+    .features-term .term h3 {
+        text-align: center;
+    }
+    .features-term .term p {
+        text-align: center;
+    }
+
+    .page-feature {
+        margin: 50px auto;
+    }
+
+
+    .highlights {
+        flex-direction: column;
+        margin: 30px 0;
+    }
+    .card {
+        width: 80%;
+        padding-bottom: 20px;
+        margin: 0 auto;
+    }
+
+
+
+    .company-logo {
+         flex-direction: column;
+    }
+
+    .google, .microsoft, .ibm, .hewlett, .vector {
+        height: 60px;
+        width: 100vw;
+        background-size: contain;
+    }
+
+
+
+    .wrapper-footer {
+        background-color: #f6f6f6;
+        display: flex;
+        flex-direction: column;
+        padding-top: 30px;
+    }
+    ul {
+        list-style-type: none;
+    }
+    .footer-logo {
+        height:50px;
+        background: url("../images/logo.svg") no-repeat;
+        background-size: contain;
+    }
+    .footer-logo-wrap {
+        display: flex;
+        width: 30%;
+
+        justify-content: center;
+    }
+
+    .footer-menu {
+        width: 50%;
+    }
+    .menu-items {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+
+    .menu-items a {
+        display: block;
+        padding: 10px;
+
+    }
+    .menu-items .item {
+        width: 50%;
+    }
+    a {
+        text-decoration: none;
+        color: var(--Dark-Grayish-Blue);
+    }
+
+
+    .social-icons ul{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 20px;
+        padding-top: 20px;
+    }
+
+
 }
