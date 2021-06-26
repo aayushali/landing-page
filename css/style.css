@@ -339,6 +339,7 @@ a {
         height: 60px;
         width: 100vw;
         background-size: contain;
+background-position: center;
     }
 
 
