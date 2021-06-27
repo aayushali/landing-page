@@ -53,14 +53,14 @@ p {
 
 .heading .install-buttons {
     display: flex;
-    width: 30%;
     margin: 40px auto;
     font-size: 0.8rem;
-    justify-content: space-evenly   ;
+    justify-content: center;
 }
 
 .install-buttons a {
     padding: 15px 30px;
+
     border-radius: 20px;
     border: none;
     color: white;
@@ -74,10 +74,12 @@ p {
 
 .install-buttons .ios {
     background-color: var(--Strong-Cyan);
+    margin-right: 10px;
 }
 
 .install-buttons .mac {
     background-color: var(--Light-Blue);
+    margin-left: 10px;
 }
 
 
